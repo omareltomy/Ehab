@@ -1,13 +1,13 @@
 # Week 1 #
-1-Javascript Fundamentals Part 1
-2-Javascript Fundamentals Part 2
+1-Javascript Fundamentals Part 1 (The Basics)
+2-Javascript Fundamentals Part 2 (The Basics)
 3-Developer skills and Environment Setup 
 4-HTML and CSS Crash Course
 5-DOM Manipulation With Javascript
 
 # Week 2#
-1- Data structures and operators
-2- Functions
-3- Arrays and Objects
-4- Advanced DOM Manipulation
+1- Data structures and operators (In depth)
+2- Functions (In depth)
+3- Arrays and Objects (In depth)
+4- Advanced DOM Manipulation (In depth)
 5- Object Orientated Programming with JavaScript
