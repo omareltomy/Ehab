@@ -1,4 +1,6 @@
-"use strict"; //Strict mode changes previously accepted "bad syntax" into real errors helping us write cleaner code.
+// "use strict"; //Strict mode changes previously accepted "bad syntax" into real errors helping us write cleaner code.
+let i = 10; 
+document.getElementsByClassName("header").innerHTML =  i ;
 
 //-------------------------------------------------------------------
 // Quick revision on (if statements)
@@ -84,11 +86,13 @@
 
 // fruits.forEach((v, i) =>{ console.log("Item ", i, "is ", v);});
 
-// console.log(fruits.join(', '));
+// let result = fruits.join(', ');
+// console.log(result);
 
 //-------------------------------------------------------------------
 // A Quick look on (Objects)
 //-------------------------------------------------------------------
+
 
 // let names = {
 //     1: 'Ahmed',
@@ -103,6 +107,7 @@
 //     'Nationality': "Egyptian",
 //     'Friends': ['Ali',"Mohammed", "Ahmed"],
 // }
+
 // console.log("Ehab's age is: ", Ehab.Age);
 // console.log("Ehab's Nationality is: ", Ehab.Nationality);
 // console.log("Ehab's Friends are: ", Ehab.Friends.join(', '));
@@ -125,18 +130,23 @@
 //         console.log("a and b are equal");
 //     }
 // }
-// compare(5, 6);
+// compare(6, 6);
 
-//  function swap (a, b) {
-//     let temp = b;
+// function swap(a, b) {
+     
+//     let temp = b; // old value of b which is 10
 //     b = a;
 //     a = temp;
-//     return [a,b];
+//     return [a, b];
 // }
+
 // let x = 5;
 // let y = 10;
+// console.log(x,y);
+
+
+
 // let result = swap(x, y);
-// console.log(result);
 
 // let x = 5;
 // let y = 10;
@@ -151,8 +161,9 @@
 // swap();
 // console.log("After Swap ", x, y);
 
+
 // let helloWorld = () => console.log("Hello World!"); // Using Arrow Functions. Arrow functions works exactly the same as regular the only difference is the syntax
-// helloWorld();
+// helloWorld(); //call
 
 // (() => console.log("Hello World!"))(); // Using an Immediately Invoked Function Expression (IIFE)
 
@@ -176,7 +187,7 @@
 
 // let i = 1;
 // do { //do while loop
-//     if (i % 2 !== 0) {
+//     if (i % 2 == 0) {
 //         console.log(i);
 //     }
 //     i++
@@ -187,13 +198,14 @@
 //         2: 'Mohammed',
 //         3: "Ehab",
 //         4: 'Omar',
+        
 //     }
-// for (name in names) { // for in
-//     console.log(name);
-//     console.log(names[name]);
+// for (item in names) { // for in
+//     console.log(`test ${item} ${names[item]}`);
+//     // console.log("test " + item + " " +names[item] )
 // }
-
-// for (let i = 1; i <= 3; i++){ //nested loops
+ 
+// for (let i = 1; i <= 5; i++){ //nested loops
 //     let row = '';
 //     for (let j = 1; j <= 3; j++) {
 //         row += j;
@@ -202,14 +214,16 @@
 //     console.log(row);
 // };
     
-
 //-------------------------------------------------------------------
 // Coding challenge 1
 //-------------------------------------------------------------------
 
-// Steven is still building his tip calculator, using the same rules as before: Tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
+// Steven is still building his tip calculator, using the same rules as before: Tip 15% of the bill
+//if the bill value is between 50 and 300, and if the value is different, the tip is 20 %.
 
-// 1. Write a function 'calcTip' that takes any bill value as an input and returns the corresponding tip, calculated based on the rules above (you can check out the code from first tip calculator challenge if you need to). Use the function type you like the most. Test the function using a bill value of 100.
+// 1. Write a function 'calcTip' that takes any bill value as an input and returns the corresponding tip,
+//calculated based on the rules above(you can check out the code from first tip calculator challenge if you need to).
+// Use the function type you like the most.Test the function using a bill value of 100.
 // 2. And now let's use arrays! So create an array 'bills' containing the test data below.
 // 3. Create an array 'tips' containing the tip value for each bill, calculated from the function you created before.
 // 4. BONUS: Create an array 'total' containing the total values, so the bill + tip.
@@ -239,3 +253,14 @@
 //   4.3. Call the function with the 'totals' array
 
 // GOOD LUCK 😀
+
+
+// Let's create a Celsius to Fahrenheit Converter
+// 1. Create an array and name it Celsius and fill it with the test data
+// 2. Create an empty array and name it Fahrenheit;
+// 3. Create a function named Convert that converts C to F, Formula is:  C * (9/5) +32
+// 4. Using forEach loop through the array "Celsius" and fill the array "Fahrenheit" with the converted values
+// 5. Create a findAvg function that finds the average temperature form the array "Fahrenheit", Formula: sum / array.length
+// 6. console.log the results
+
+// Test Data [18, 20, 21, 25, 15, 13, 17]
